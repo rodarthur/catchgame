@@ -1,1 +1,1 @@
-# game-catch-the-text
+Click on the text.
