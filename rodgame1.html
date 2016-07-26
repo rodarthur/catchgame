@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+	<title>Rod's First HTML Game!</title>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<style type="text/css">
+		
+		
+		h1 {border: 100px;}
+	</style>
+
+</head>
+
+<body>
+	<div>
+		<h1 id="runner">Click me, if you can!!!!!!!</h1>	
+	</div>
+	
+	<script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+	<script type="text/javascript">$(document).ready(function() {
+	$("h1").hover(function() {
+		$("div").before("<br/><br/><br/><br/>");
+		$("div").prepend("")
+	});
+	
+	$('#runner').live('click', function(e) {
+		alert("You clicked! me!  Now try again...");
+		location.reload();
+		});
+		
+	
+	});
+	
+	
+	
+
+	</script>
+</body>
